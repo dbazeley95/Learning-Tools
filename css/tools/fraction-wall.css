@@ -1,0 +1,71 @@
+.fw-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.fw-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.fw-btn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+  font-weight: 600;
+}
+
+.fw-row-count {
+  font-weight: 600;
+  color: var(--color-text-dim);
+  min-width: 80px;
+  text-align: center;
+}
+
+.fw-rows {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3) var(--space-4) max(var(--space-4), var(--safe-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.fw-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.fw-row-label {
+  width: 48px;
+  flex: 0 0 auto;
+  font-weight: 600;
+  color: var(--color-text-dim);
+  font-size: 0.9rem;
+}
+
+.fw-row-bar {
+  flex: 1;
+  display: flex;
+  gap: 2px;
+  height: 44px;
+}
+
+.fw-segment {
+  flex: 1;
+  min-width: 0;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.fw-segment--shaded {
+  background: var(--color-purple);
+}

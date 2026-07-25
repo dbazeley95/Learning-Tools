@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>XCET Learning Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Touch-first classroom teaching tools for iPad and other touchscreens.">
+
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="XCET Tools">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+<link rel="stylesheet" href="./css/tokens.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="./css/tools/whiteboard.css">
+<link rel="stylesheet" href="./css/tools/traffic-lights.css">
+<link rel="stylesheet" href="./css/tools/countdown.css">
+<link rel="stylesheet" href="./css/tools/true-false.css">
+<link rel="stylesheet" href="./css/tools/abcd.css">
+<link rel="stylesheet" href="./css/tools/fraction-wall.css">
+<link rel="stylesheet" href="./css/tools/smiley.css">
+<link rel="stylesheet" href="./css/tools/thermometer.css">
+<link rel="stylesheet" href="./css/tools/stopwatch.css">
+</head>
+<body>
+
+<section id="home-view">
+  <header class="topbar topbar--home">
+    <h1 class="app-title">XCET Learning Tools</h1>
+  </header>
+  <main id="home-grid" class="home-grid"></main>
+</section>
+
+<section id="tool-view" hidden>
+  <header class="topbar">
+    <a class="back-link" href="#/">&#8249; XCET Learning Tools</a>
+    <h1 class="topbar-title" id="tool-title"></h1>
+  </header>
+  <main id="tool-container" class="tool-container"></main>
+</section>
+
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

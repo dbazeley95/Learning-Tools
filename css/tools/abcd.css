@@ -1,0 +1,37 @@
+.abcd-view {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+
+.abcd-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(2.5rem, 9vw, 6rem);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.55);
+  transition: transform 100ms ease, color 150ms ease;
+}
+
+.abcd-cell--0 { background: var(--color-purple); }
+.abcd-cell--1 { background: var(--color-gold); }
+.abcd-cell--2 { background: var(--color-green); }
+.abcd-cell--3 { background: var(--color-blue); }
+
+.abcd-cell--revealed {
+  color: #fff;
+}
+
+.abcd-cell--revealed span {
+  transform: scale(1.15);
+}
+
+.abcd-cell span {
+  transition: transform 150ms ease;
+  display: inline-block;
+}
+
+.abcd-cell:active { transform: scale(0.97); }

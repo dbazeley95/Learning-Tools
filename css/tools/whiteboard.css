@@ -1,0 +1,51 @@
+.wb-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.wb-toolbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-elevated);
+  flex-wrap: wrap;
+}
+
+.wb-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--swatch-color);
+  border: 3px solid transparent;
+}
+
+.wb-swatch--active {
+  border-color: #fff;
+}
+
+.wb-eraser,
+.wb-clear {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.wb-eraser--active {
+  background: #fff;
+  color: var(--color-bg);
+}
+
+.wb-canvas {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: block;
+  background: #14141a;
+  touch-action: none;
+}

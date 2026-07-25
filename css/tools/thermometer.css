@@ -1,0 +1,56 @@
+.therm-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-5);
+  gap: var(--space-4);
+  min-height: 0;
+}
+
+.therm-value-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.therm-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  min-width: 90px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.therm-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-elevated);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.therm-track {
+  position: relative;
+  flex: 1;
+  width: min(22vw, 90px);
+  border-radius: var(--radius-full);
+  background: var(--color-bg-elevated);
+  overflow: hidden;
+  touch-action: none;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.therm-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-red);
+  transition: height 120ms ease;
+}
+
+.therm-track.dragging .therm-fill {
+  transition: none;
+}
