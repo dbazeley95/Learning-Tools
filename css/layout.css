@@ -3,13 +3,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
-  padding: var(--space-5) max(var(--space-5), var(--safe-left)) max(var(--space-5), var(--safe-bottom));
+  padding-top: var(--space-5);
+  padding-bottom: max(var(--space-5), var(--safe-bottom));
+  padding-left: max(var(--space-5), var(--safe-left));
+  padding-right: max(var(--space-5), var(--safe-right));
   overflow-y: auto;
+  overflow-x: hidden;
   align-content: start;
 }
 
 .tile {
   aspect-ratio: 1;
+  min-width: 0;
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
@@ -41,6 +46,8 @@
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .tile--navy { background: var(--surface-navy-bg); color: var(--surface-navy-fg); }

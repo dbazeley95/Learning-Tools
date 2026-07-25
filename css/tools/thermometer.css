@@ -47,7 +47,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--color-red);
+  background: var(--surface-red-bg);
   transition: height 120ms ease;
 }
 

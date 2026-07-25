@@ -53,13 +53,16 @@ a {
 .topbar {
   flex: 0 0 auto;
   height: var(--topbar-height);
-  padding-top: max(var(--space-2), var(--safe-top));
-  padding-left: max(var(--space-4), var(--safe-left));
-  padding-right: max(var(--space-4), var(--safe-right));
+  margin: max(var(--space-3), var(--safe-top)) max(var(--space-3), var(--safe-right)) 0
+    max(var(--space-3), var(--safe-left));
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
   display: flex;
   align-items: center;
   gap: var(--space-4);
   background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   position: relative;
 }
 
