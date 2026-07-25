@@ -17,7 +17,6 @@
   justify-content: center;
   gap: var(--space-2);
   padding: var(--space-3);
-  color: #fff;
   transition: transform 100ms ease;
 }
 
@@ -44,11 +43,11 @@
   text-align: center;
 }
 
-.tile--purple { background: var(--color-purple); }
-.tile--gold { background: var(--color-gold); }
-.tile--green { background: var(--color-green); }
-.tile--blue { background: var(--color-blue); }
-.tile--red { background: var(--color-red); }
+.tile--navy { background: var(--surface-navy-bg); color: var(--surface-navy-fg); }
+.tile--gold { background: var(--surface-gold-bg); color: var(--surface-gold-fg); }
+.tile--mauve { background: var(--surface-mauve-bg); color: var(--surface-mauve-fg); }
+.tile--tan { background: var(--surface-tan-bg); color: var(--surface-tan-fg); }
+.tile--red { background: var(--surface-red-bg); color: var(--surface-red-fg); }
 
 @media (min-width: 900px) {
   .home-grid {

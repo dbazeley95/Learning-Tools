@@ -7,12 +7,12 @@
 <meta name="description" content="Touch-first classroom teaching tools for iPad and other touchscreens.">
 
 <link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#142146">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="XCET Tools">
 <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="icon" type="image/png" href="./icons/favicon.png">
 
 <link rel="stylesheet" href="./css/tokens.css">
 <link rel="stylesheet" href="./css/base.css">
@@ -31,14 +31,20 @@
 
 <section id="home-view">
   <header class="topbar topbar--home">
-    <h1 class="app-title">XCET Learning Tools</h1>
+    <h1 class="app-title">
+      <img src="./icons/logo-mark.png" alt="" class="app-title-logo" width="28" height="28">
+      <span>XCET Learning Tools</span>
+    </h1>
   </header>
   <main id="home-grid" class="home-grid"></main>
 </section>
 
 <section id="tool-view" hidden>
-  <header class="topbar">
-    <a class="back-link" href="#/">&#8249; XCET Learning Tools</a>
+  <header class="topbar topbar--tool">
+    <a class="back-link" href="#/" aria-label="Back to XCET Learning Tools">
+      <span class="back-link__full" aria-hidden="true">&#8249; XCET Learning Tools</span>
+      <span class="back-link__short" aria-hidden="true">&#8249; Tools</span>
+    </a>
     <h1 class="topbar-title" id="tool-title"></h1>
   </header>
   <main id="tool-container" class="tool-container"></main>

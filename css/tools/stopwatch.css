@@ -28,7 +28,7 @@
 }
 
 .sw-btn--primary {
-  background: var(--color-blue);
+  background: var(--surface-navy-bg);
   min-width: 120px;
 }
 

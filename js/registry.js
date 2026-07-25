@@ -7,7 +7,7 @@ export const TOOLS = [
   {
     id: "whiteboard",
     name: "Whiteboard",
-    color: "purple",
+    color: "navy",
     icon: "whiteboard",
     mount: () => import("./tools/whiteboard.js"),
   },
@@ -21,14 +21,14 @@ export const TOOLS = [
   {
     id: "countdown",
     name: "Countdown",
-    color: "green",
+    color: "mauve",
     icon: "countdown",
     mount: () => import("./tools/countdown.js"),
   },
   {
     id: "true-false",
     name: "True or False",
-    color: "blue",
+    color: "tan",
     icon: "trueFalse",
     mount: () => import("./tools/true-false.js"),
   },
@@ -42,7 +42,7 @@ export const TOOLS = [
   {
     id: "fraction-wall",
     name: "Fraction Wall",
-    color: "purple",
+    color: "navy",
     icon: "fractionWall",
     mount: () => import("./tools/fraction-wall.js"),
   },
@@ -56,14 +56,14 @@ export const TOOLS = [
   {
     id: "thermometer",
     name: "Thermometer",
-    color: "green",
+    color: "mauve",
     icon: "thermometer",
     mount: () => import("./tools/thermometer.js"),
   },
   {
     id: "stopwatch",
     name: "Stopwatch",
-    color: "blue",
+    color: "tan",
     icon: "stopwatch",
     mount: () => import("./tools/stopwatch.js"),
   },

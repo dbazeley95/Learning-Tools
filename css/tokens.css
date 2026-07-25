@@ -1,17 +1,34 @@
 :root {
-  --color-purple: #7c5cbf;
-  --color-purple-dark: #5e4093;
-  --color-gold: #d4a72c;
-  --color-gold-dark: #a8811f;
-  --color-green: #4a9e5c;
-  --color-green-dark: #357344;
-  --color-blue: #3f7cac;
-  --color-blue-dark: #2c5a80;
-  --color-red: #c0392b;
-  --color-red-dark: #922920;
+  /* Brand palette (Xavier Catholic Education Trust) */
+  --brand-navy: #142146;
+  --brand-navy-tile: #2c4896;
+  --brand-red: #c4232a;
+  --brand-gold: #ebd166;
+  --brand-tan: #cfccbc;
+  --brand-mauve: #953d76;
 
-  --color-bg: #0f172a;
-  --color-bg-elevated: #1a2540;
+  /* Contrast-paired surfaces: every colored surface uses -bg with its matching -fg */
+  --surface-navy-bg: var(--brand-navy-tile);
+  --surface-navy-fg: #fff;
+  --surface-red-bg: var(--brand-red);
+  --surface-red-fg: #fff;
+  --surface-gold-bg: var(--brand-gold);
+  --surface-gold-fg: var(--brand-navy);
+  --surface-tan-bg: var(--brand-tan);
+  --surface-tan-fg: var(--brand-navy);
+  --surface-mauve-bg: var(--brand-mauve);
+  --surface-mauve-fg: #fff;
+
+  /* Traffic Lights: literal stop/caution/go, deliberately decoupled from brand */
+  --traffic-red: #c0392b;
+  --traffic-red-dark: #922920;
+  --traffic-yellow: #d4a72c;
+  --traffic-yellow-dark: #7a5e13;
+  --traffic-green: #4a9e5c;
+  --traffic-green-dark: #357344;
+
+  --color-bg: var(--brand-navy);
+  --color-bg-elevated: #1c2e5f;
   --color-text: #f4f6fb;
   --color-text-dim: #b7c0d6;
 

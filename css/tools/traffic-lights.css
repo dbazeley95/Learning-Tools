@@ -6,9 +6,9 @@
   transition: background 150ms ease;
 }
 
-.traffic-lights[data-active="red"] { background: var(--color-red-dark); }
-.traffic-lights[data-active="yellow"] { background: #7a5e13; }
-.traffic-lights[data-active="green"] { background: var(--color-green-dark); }
+.traffic-lights[data-active="red"] { background: var(--traffic-red-dark); }
+.traffic-lights[data-active="yellow"] { background: var(--traffic-yellow-dark); }
+.traffic-lights[data-active="green"] { background: var(--traffic-green-dark); }
 
 .traffic-housing {
   background: #1c1c22;
@@ -28,9 +28,9 @@
   transition: opacity 150ms ease, box-shadow 150ms ease;
 }
 
-.light--red { background: var(--color-red); }
-.light--yellow { background: var(--color-gold); }
-.light--green { background: var(--color-green); }
+.light--red { background: var(--traffic-red); }
+.light--yellow { background: var(--traffic-yellow); }
+.light--green { background: var(--traffic-green); }
 
 .light.lit { opacity: 1; }
 .light--red.lit { box-shadow: 0 0 60px 12px rgba(192, 57, 43, 0.8); }

@@ -12,26 +12,23 @@
   justify-content: center;
   font-size: clamp(2.5rem, 9vw, 6rem);
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.55);
-  transition: transform 100ms ease, color 150ms ease;
+  transition: transform 100ms ease;
 }
 
-.abcd-cell--0 { background: var(--color-purple); }
-.abcd-cell--1 { background: var(--color-gold); }
-.abcd-cell--2 { background: var(--color-green); }
-.abcd-cell--3 { background: var(--color-blue); }
+.abcd-cell--0 { background: var(--surface-navy-bg); color: var(--surface-navy-fg); }
+.abcd-cell--1 { background: var(--surface-gold-bg); color: var(--surface-gold-fg); }
+.abcd-cell--2 { background: var(--surface-mauve-bg); color: var(--surface-mauve-fg); }
+.abcd-cell--3 { background: var(--surface-tan-bg); color: var(--surface-tan-fg); }
 
-.abcd-cell--revealed {
-  color: #fff;
+.abcd-cell span {
+  opacity: 0.55;
+  transition: opacity 150ms ease, transform 150ms ease;
+  display: inline-block;
 }
 
 .abcd-cell--revealed span {
+  opacity: 1;
   transform: scale(1.15);
-}
-
-.abcd-cell span {
-  transition: transform 150ms ease;
-  display: inline-block;
 }
 
 .abcd-cell:active { transform: scale(0.97); }

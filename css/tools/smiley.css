@@ -40,9 +40,9 @@
 
 .smiley-face:active { transform: scale(0.96); }
 
-.smiley-face--happy { background: var(--color-green); }
-.smiley-face--neutral { background: var(--color-gold); }
-.smiley-face--sad { background: var(--color-red); }
+.smiley-face--happy { background: var(--surface-mauve-bg); color: var(--surface-mauve-fg); }
+.smiley-face--neutral { background: var(--surface-gold-bg); color: var(--surface-gold-fg); }
+.smiley-face--sad { background: var(--surface-red-bg); color: var(--surface-red-fg); }
 
 .smiley-icon {
   width: 55%;
@@ -67,4 +67,5 @@
   font-weight: 700;
   font-size: 1.1rem;
   border: 2px solid var(--color-bg);
+  color: var(--color-text);
 }

@@ -10,12 +10,12 @@ let onClick;
 
 function faceSvg(id) {
   if (id === "happy") {
-    return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="#fff"/><circle cx="15" cy="10" r="1.3" fill="#fff"/><path d="M7 14c1.2 1.8 2.9 2.8 5 2.8s3.8-1 5-2.8" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`;
+    return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="currentColor"/><circle cx="15" cy="10" r="1.3" fill="currentColor"/><path d="M7 14c1.2 1.8 2.9 2.8 5 2.8s3.8-1 5-2.8" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`;
   }
   if (id === "neutral") {
-    return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="#fff"/><circle cx="15" cy="10" r="1.3" fill="#fff"/><line x1="7.5" y1="15.5" x2="16.5" y2="15.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+    return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="currentColor"/><circle cx="15" cy="10" r="1.3" fill="currentColor"/><line x1="7.5" y1="15.5" x2="16.5" y2="15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
   }
-  return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="#fff"/><circle cx="15" cy="10" r="1.3" fill="#fff"/><path d="M7 17c1.2-1.8 2.9-2.8 5-2.8s3.8 1 5 2.8" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`;
+  return `<svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="1.3" fill="currentColor"/><circle cx="15" cy="10" r="1.3" fill="currentColor"/><path d="M7 17c1.2-1.8 2.9-2.8 5-2.8s3.8 1 5 2.8" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`;
 }
 
 function render() {
