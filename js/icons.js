@@ -66,4 +66,47 @@ export const ICONS = {
     <path d="M9.5 2.5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
     <path d="M18.5 4l1.4 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
   </svg>`,
+
+  dice: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="8" cy="8" r="1.4" fill="currentColor"/>
+    <circle cx="16" cy="8" r="1.4" fill="currentColor"/>
+    <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
+    <circle cx="8" cy="16" r="1.4" fill="currentColor"/>
+    <circle cx="16" cy="16" r="1.4" fill="currentColor"/>
+  </svg>`,
+
+  rps: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 12.5V6.8a1.2 1.2 0 012.4 0v4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M8.4 11V5.3a1.2 1.2 0 012.4 0V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M10.8 11V6.1a1.2 1.2 0 012.4 0V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M13.2 13V8.4a1.2 1.2 0 012.4 0v6.4c0 3-2 6.2-5.6 6.2-2.4 0-3.6-1-4.8-2.6L3 15.2c-.5-.8 0-1.9 1.4-1.7l1.6.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`,
+
+  memory: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2.5" y="4" width="8" height="10.5" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="13.5" y="4" width="8" height="10.5" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M5 8.5l1.5 1.5L9 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 8.5l1.5 1.5L20 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 18.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>`,
+
+  higherLower: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 3v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M8.5 6.5L12 3l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 21v-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M8.5 17.5L12 21l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`,
+
+  reaction: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor"/>
+  </svg>`,
+
+  spinner: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M12 12L12 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M12 12L18.7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M12 12L16.5 19.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="12" cy="12" r="1.6" fill="currentColor"/>
+  </svg>`,
 };

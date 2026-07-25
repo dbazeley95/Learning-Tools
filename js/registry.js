@@ -67,6 +67,48 @@ export const TOOLS = [
     icon: "stopwatch",
     mount: () => import("./tools/stopwatch.js"),
   },
+  {
+    id: "dice",
+    name: "Dice",
+    color: "red",
+    icon: "dice",
+    mount: () => import("./tools/dice.js"),
+  },
+  {
+    id: "rps",
+    name: "Rock Paper Scissors",
+    color: "navy",
+    icon: "rps",
+    mount: () => import("./tools/rps.js"),
+  },
+  {
+    id: "memory",
+    name: "Memory Match",
+    color: "gold",
+    icon: "memory",
+    mount: () => import("./tools/memory.js"),
+  },
+  {
+    id: "higher-lower",
+    name: "Higher or Lower",
+    color: "mauve",
+    icon: "higherLower",
+    mount: () => import("./tools/higher-lower.js"),
+  },
+  {
+    id: "reaction",
+    name: "Reaction Time",
+    color: "tan",
+    icon: "reaction",
+    mount: () => import("./tools/reaction.js"),
+  },
+  {
+    id: "spinner",
+    name: "Spinner Wheel",
+    color: "red",
+    icon: "spinner",
+    mount: () => import("./tools/spinner.js"),
+  },
 ];
 
 export function getTool(id) {
