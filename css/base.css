@@ -40,7 +40,6 @@ a {
 #home-view,
 #tool-view {
   min-height: 100dvh;
-  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
 }
@@ -136,6 +135,20 @@ a {
 
 .back-link:active {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.topbar-action {
+  grid-column: 3;
+  justify-self: end;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.topbar-action:active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .tool-container {

@@ -1,26 +1,15 @@
 .abcd-view {
-  position: relative;
   flex: 1;
+  min-height: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
   gap: 3px;
 }
 
-.abcd-reset {
-  position: absolute;
-  top: max(var(--space-3), var(--safe-top));
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md);
-  background: rgba(0, 0, 0, 0.35);
-  color: #fff;
-  font-weight: 600;
-}
-
 .abcd-cell {
+  min-height: 0;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
