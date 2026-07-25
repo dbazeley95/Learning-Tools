@@ -1,9 +1,23 @@
 .abcd-view {
+  position: relative;
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 3px;
+}
+
+.abcd-reset {
+  position: absolute;
+  top: max(var(--space-3), var(--safe-top));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-weight: 600;
 }
 
 .abcd-cell {
@@ -12,7 +26,7 @@
   justify-content: center;
   font-size: clamp(2.5rem, 9vw, 6rem);
   font-weight: 800;
-  transition: transform 100ms ease;
+  transition: transform 100ms ease, filter 150ms ease;
 }
 
 .abcd-cell--0 { background: var(--surface-navy-bg); color: var(--surface-navy-fg); }
@@ -21,9 +35,17 @@
 .abcd-cell--3 { background: var(--surface-tan-bg); color: var(--surface-tan-fg); }
 
 .abcd-cell span {
-  opacity: 0.55;
+  opacity: 0.85;
   transition: opacity 150ms ease, transform 150ms ease;
   display: inline-block;
+}
+
+.abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) {
+  filter: brightness(0.4) saturate(0.5);
+}
+
+.abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) span {
+  opacity: 0.3;
 }
 
 .abcd-cell--revealed span {
