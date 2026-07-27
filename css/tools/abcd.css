@@ -1,3 +1,54 @@
+.abcd-container {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.abcd-toggle {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+}
+
+.abcd-toggle-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  letter-spacing: 0.04em;
+}
+
+.abcd-toggle-label--active {
+  color: var(--color-text);
+}
+
+.abcd-toggle-switch {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-elevated);
+  padding: 3px;
+}
+
+.abcd-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--brand-gold);
+  transition: transform 150ms ease;
+}
+
+.abcd-toggle-switch--esdm .abcd-toggle-knob {
+  transform: translateX(22px);
+}
+
 .abcd-view {
   flex: 1;
   min-height: 0;
@@ -11,10 +62,11 @@
   min-height: 0;
   min-width: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: clamp(2.5rem, 9vw, 6rem);
-  font-weight: 800;
+  gap: var(--space-1);
+  padding: var(--space-2);
   transition: transform 100ms ease, filter 150ms ease;
 }
 
@@ -23,23 +75,38 @@
 .abcd-cell--2 { background: var(--surface-mauve-bg); color: var(--surface-mauve-fg); }
 .abcd-cell--3 { background: var(--surface-tan-bg); color: var(--surface-tan-fg); }
 
-.abcd-cell span {
+.abcd-big {
+  font-size: clamp(2.5rem, 9vw, 6rem);
+  font-weight: 800;
   opacity: 0.85;
   transition: opacity 150ms ease, transform 150ms ease;
   display: inline-block;
+  line-height: 1;
+}
+
+.abcd-caption {
+  font-size: clamp(0.75rem, 2.2vw, 1.2rem);
+  font-weight: 700;
+  opacity: 0.75;
+  text-align: center;
 }
 
 .abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) {
   filter: brightness(0.4) saturate(0.5);
 }
 
-.abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) span {
+.abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) .abcd-big,
+.abcd-view.has-reveal .abcd-cell:not(.abcd-cell--revealed) .abcd-caption {
   opacity: 0.3;
 }
 
-.abcd-cell--revealed span {
+.abcd-cell--revealed .abcd-big {
   opacity: 1;
   transform: scale(1.15);
+}
+
+.abcd-cell--revealed .abcd-caption {
+  opacity: 1;
 }
 
 .abcd-cell:active { transform: scale(0.97); }

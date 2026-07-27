@@ -5,7 +5,13 @@ export function renderHome(container) {
   container.innerHTML = "";
   for (const tool of TOOLS) {
     const tile = document.createElement("a");
-    tile.href = `#/tool/${tool.id}`;
+    if (tool.href) {
+      tile.href = tool.href;
+      tile.target = "_blank";
+      tile.rel = "noopener";
+    } else {
+      tile.href = `#/tool/${tool.id}`;
+    }
     tile.className = `tile tile--${tool.color}`;
     tile.innerHTML = `
       <span class="tile-icon">${ICONS[tool.icon] ?? ""}</span>
