@@ -1,4 +1,5 @@
 const actionBtn = document.getElementById("tool-action");
+const extraEl = document.getElementById("tool-extra");
 let currentActionHandler = null;
 
 export function setToolTitle(name) {
@@ -28,4 +29,17 @@ export function clearToolAction() {
   }
   actionBtn.hidden = true;
   actionBtn.textContent = "";
+}
+
+// Lets a tool render arbitrary custom controls (e.g. a switch) into the topbar,
+// alongside the action button. Returns the container so the caller can attach
+// its own listeners; clearToolExtra() (called by the router on every route
+// change) empties it again.
+export function setToolExtra(html) {
+  extraEl.innerHTML = html;
+  return extraEl;
+}
+
+export function clearToolExtra() {
+  extraEl.innerHTML = "";
 }

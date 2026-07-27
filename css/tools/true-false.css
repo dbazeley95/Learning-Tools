@@ -18,7 +18,7 @@
   transition: transform 100ms ease, filter 150ms ease, opacity 150ms ease;
 }
 
-.tf-zone--true { background: var(--surface-mauve-bg); }
+.tf-zone--true { background: var(--surface-green-bg); }
 .tf-zone--false { background: var(--surface-red-bg); }
 
 .tf-zone--selected {

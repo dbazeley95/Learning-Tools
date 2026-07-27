@@ -1,5 +1,5 @@
 import { getTool } from "./registry.js";
-import { setToolTitle, resetTitle, clearToolAction } from "./chrome.js";
+import { setToolTitle, resetTitle, clearToolAction, clearToolExtra } from "./chrome.js";
 
 const homeView = document.getElementById("home-view");
 const toolView = document.getElementById("tool-view");
@@ -20,6 +20,7 @@ async function renderRoute() {
   activeModule = null;
   toolContainer.innerHTML = "";
   clearToolAction();
+  clearToolExtra();
 
   const parsed = parseHash();
 

@@ -9,36 +9,75 @@
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-4);
+  flex-wrap: wrap;
   padding: var(--space-3) var(--space-4);
+  margin: 0 max(var(--space-3), var(--safe-right)) max(var(--space-3), var(--safe-bottom))
+    max(var(--space-3), var(--safe-left));
   background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.wb-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   flex-wrap: wrap;
 }
 
 .wb-swatch {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--swatch-color);
   border: 3px solid transparent;
+  flex: 0 0 auto;
 }
 
 .wb-swatch--active {
   border-color: #fff;
 }
 
-.wb-eraser,
-.wb-clear {
+.wb-size {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.wb-size--active {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.wb-size-dot {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: var(--color-text);
+}
+
+.wb-btn {
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.1);
   font-weight: 600;
-  margin-left: auto;
+  flex: 0 0 auto;
 }
 
 .wb-eraser--active {
   background: #fff;
   color: var(--color-bg);
+}
+
+.wb-export-png,
+.wb-export-pdf {
+  background: var(--surface-mauve-bg);
+  color: var(--surface-mauve-fg);
 }
 
 .wb-canvas {

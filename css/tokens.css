@@ -18,6 +18,8 @@
   --surface-tan-fg: var(--brand-navy);
   --surface-mauve-bg: var(--brand-mauve);
   --surface-mauve-fg: #fff;
+  --surface-green-bg: #2f9e56;
+  --surface-green-fg: #fff;
 
   /* Traffic Lights: literal stop/caution/go, deliberately decoupled from brand */
   --traffic-red: #c0392b;
